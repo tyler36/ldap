@@ -50,6 +50,8 @@ $table->string('username')->unique();
     name="username" value="{{ old('username') }}" required autofocus>
 ```
 
+
+###  Laravel 7
 5. Update your ```LoginController``` file. Remember to import ```Tyler36\Ldap\LdapAuthenticator;```
 
 ```php
@@ -60,7 +62,7 @@ $table->string('username')->unique();
   */
 public function username()
 {
-    return 'username';
+    return config('ldap.username');
 }
 
 /**
@@ -94,6 +96,15 @@ protected function attemptLogin(Request $request)
 
     auth()->login($user);
 }
+```
+
+### laravel/breeze
+- Replace the rules section in `app/Http/Requests/Auth/LoginRequest.php`.
+```php
+    public function rules()
+    {
+        return config('ldap.rules');
+    }
 ```
 
 
