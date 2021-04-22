@@ -1,7 +1,7 @@
 {
     "name": "tyler36/ldap",
     "description": ":package_description",
-    "license": "license",
+    "license": "mit",
     "authors": [
         {
             "name": "Tyler36"
