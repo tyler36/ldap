@@ -1,6 +1,6 @@
 {
     "name": "tyler36/ldap",
-    "description": ":package_description",
+    "description": "Authenticate in Laravel via LDAP",
     "license": "mit",
     "authors": [
         {
