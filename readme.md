@@ -20,7 +20,7 @@ $ composer require tyler36/ldap
 1. Publish the config file
 
 ```php
-$ php artisan vendor:publish --provider=Tyler36\Ldap\LdapServiceProvider
+$ php artisan vendor:publish --provider="Tyler36\Ldap\LdapServiceProvider"
 ```
 
 
